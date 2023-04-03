@@ -1,11 +1,11 @@
 {
     "dias": [
       {
-        "nombre": "Día 1",
+        "nombre": "Lunes",
         "ejercicios": [
           {
             "nombre": "Press de banca",
-            "imagen": "https://raw.githubusercontent.com/juanjosetpc/pruebaconjson/main/remo con barra.png",
+            "imagen": "https://raw.githubusercontent.com/juanjosetpc/pruebaconjson/main/remo%20con%20barra.png",
             "series": 3,
             "repeticiones": 10
           },
@@ -18,11 +18,79 @@
         ]
       },
       {
-        "nombre": "Día 2",
+        "nombre": "Martes",
         "ejercicios": [
           {
             "nombre": "Peso muerto",
-            "imagen": "https://raw.githubusercontent.com/juanjosetpc/pruebaconjson/main/jalon en polea.png",
+            "imagen": "https://raw.githubusercontent.com/juanjosetpc/pruebaconjson/main/jalon%20en%20polea.png",
+            "series": 3,
+            "repeticiones": 12
+          },
+          {
+            "nombre": "Dominadas",
+            "imagen": "https://raw.githubusercontent.com/juanjosetpc/pruebaconjson/main/planoConBarra.png",
+            "series": 3,
+            "repeticiones": 10
+          }
+        ]
+      },
+      {
+        "nombre": "Miercoles",
+        "ejercicios": [
+          {
+            "nombre": "Peso muerto",
+            "imagen": "https://raw.githubusercontent.com/juanjosetpc/pruebaconjson/main/jalon%20en%20polea.png",
+            "series": 3,
+            "repeticiones": 12
+          },
+          {
+            "nombre": "Dominadas",
+            "imagen": "https://raw.githubusercontent.com/juanjosetpc/pruebaconjson/main/planoConBarra.png",
+            "series": 3,
+            "repeticiones": 10
+          }
+        ]
+      },
+      {
+        "nombre": "Jueves",
+        "ejercicios": [
+          {
+            "nombre": "Peso muerto",
+            "imagen": "https://raw.githubusercontent.com/juanjosetpc/pruebaconjson/main/jalon%20en%20polea.png",
+            "series": 3,
+            "repeticiones": 12
+          },
+          {
+            "nombre": "Dominadas",
+            "imagen": "https://raw.githubusercontent.com/juanjosetpc/pruebaconjson/main/planoConBarra.png",
+            "series": 3,
+            "repeticiones": 10
+          }
+        ]
+      },
+      {
+        "nombre": "Viernes",
+        "ejercicios": [
+          {
+            "nombre": "Peso muerto",
+            "imagen": "https://raw.githubusercontent.com/juanjosetpc/pruebaconjson/main/jalon%20en%20polea.png",
+            "series": 3,
+            "repeticiones": 12
+          },
+          {
+            "nombre": "Dominadas",
+            "imagen": "https://raw.githubusercontent.com/juanjosetpc/pruebaconjson/main/planoConBarra.png",
+            "series": 3,
+            "repeticiones": 10
+          }
+        ]
+      },
+      {
+        "nombre": "Sabado",
+        "ejercicios": [
+          {
+            "nombre": "Peso muerto",
+            "imagen": "https://raw.githubusercontent.com/juanjosetpc/pruebaconjson/main/jalon%20en%20polea.png",
             "series": 3,
             "repeticiones": 12
           },

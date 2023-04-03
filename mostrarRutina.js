@@ -64,6 +64,19 @@ function mostrarRutina() {
   
           rutinaAccordion.appendChild(card);
         });
+
+        // Añadir evento click a los botones para que se expandan o contraigan las tarjetas
+        const buttons = document.querySelectorAll('.btn-link');
+        buttons.forEach((button) => {
+          button.addEventListener('click', () => {
+            const target = button.getAttribute('data-target');
+            const collapse = document.querySelector(target);
+            if (collapse.classList.contains('show')) {
+              collapse.classList.remove('show');
+            } else {
+              collapse.classList.add('show');
+            }
+          });
+        });
       });
-  }
-  
+}
