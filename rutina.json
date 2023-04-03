@@ -1,0 +1,39 @@
+{
+    "dias": [
+      {
+        "nombre": "Día 1",
+        "ejercicios": [
+          {
+            "nombre": "Press de banca",
+            "imagen": "/images/barbell-bench-press.jpg",
+            "series": 3,
+            "repeticiones": 10
+          },
+          {
+            "nombre": "Sentadillas",
+            "imagen": "/images/barbell-bench-press.jpg",
+            "series": 4,
+            "repeticiones": 8
+          }
+        ]
+      },
+      {
+        "nombre": "Día 2",
+        "ejercicios": [
+          {
+            "nombre": "Peso muerto",
+            "imagen": "/images/barbell-bench-press.jpg",
+            "series": 3,
+            "repeticiones": 12
+          },
+          {
+            "nombre": "Dominadas",
+            "imagen": "/images/barbell-bench-press.jpg",
+            "series": 3,
+            "repeticiones": 10
+          }
+        ]
+      }
+    ]
+  }
+  
