@@ -1,6 +1,6 @@
 function mostrarRutina() {
-    fetch('rutina.json')
-      .then(response => response.json())
+  fetch('https://raw.githubusercontent.com/juanjosetpc/pruebaconjson/main/rutina.json')
+  .then(response => response.json())
       .then(data => {
         const rutinaAccordion = document.getElementById('rutinaAccordion');
   

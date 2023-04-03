@@ -5,13 +5,13 @@
         "ejercicios": [
           {
             "nombre": "Press de banca",
-            "imagen": "/images/barbell-bench-press.jpg",
+            "imagen": "https://raw.githubusercontent.com/juanjosetpc/pruebaconjson/main/remo con barra.png",
             "series": 3,
             "repeticiones": 10
           },
           {
             "nombre": "Sentadillas",
-            "imagen": "/images/barbell-bench-press.jpg",
+            "imagen": "https://raw.githubusercontent.com/juanjosetpc/pruebaconjson/main/aperturasTumbado.png",
             "series": 4,
             "repeticiones": 8
           }
@@ -22,13 +22,13 @@
         "ejercicios": [
           {
             "nombre": "Peso muerto",
-            "imagen": "/images/barbell-bench-press.jpg",
+            "imagen": "https://raw.githubusercontent.com/juanjosetpc/pruebaconjson/main/jalon en polea.png",
             "series": 3,
             "repeticiones": 12
           },
           {
             "nombre": "Dominadas",
-            "imagen": "/images/barbell-bench-press.jpg",
+            "imagen": "https://raw.githubusercontent.com/juanjosetpc/pruebaconjson/main/planoConBarra.png",
             "series": 3,
             "repeticiones": 10
           }
