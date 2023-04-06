@@ -1,0 +1,28 @@
+/**{
+    background: #000000;
+}*/
+
+.navbar-expand-lg, .navbar-expand-lg *{
+    background-color: #0A0A0A;
+}
+
+
+.navbar-toggler-icon{
+   background-image: url(../bx-menu-white.svg);
+}
+
+
+.nav-link
+{
+    color: rgb(255, 255, 255);
+}
+
+#current
+{
+    color:#088BB4;
+}
+
+.nav-link:hover
+{
+    color:yellow;
+}

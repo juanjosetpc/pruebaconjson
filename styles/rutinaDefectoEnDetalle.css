@@ -1,0 +1,36 @@
+@import url(Nav.css);
+
+#tituloRutina{
+    height: 10em;
+    background-size: cover;
+    background-position: center center;
+    color: #FFFF;
+}
+
+.dia, button.accordion-button,.accordion-button.collapsed::after{
+    background-color:#69737B;
+    color: #FFFF;
+    font-size: 20px;
+}
+
+img{
+    float: left;
+}
+
+body{
+    background-color: black;;
+}
+
+.accordion-item{
+background-color: #000000;
+}
+
+
+#tituloRutina h1{
+    color: white;
+}
+
+#corazon{
+    margin-left: 5%;
+    color: white;
+}

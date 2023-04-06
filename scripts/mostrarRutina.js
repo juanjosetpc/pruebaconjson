@@ -1,35 +1,46 @@
+const idRutina = params.get('idRutina');
+
 function mostrarRutina() {
-  fetch('https://raw.githubusercontent.com/juanjosetpc/pruebaconjson/main/rutina.json')
+  fetch('https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/ficheros%20json/rutinas.json')
   .then(response => response.json())
       .then(data => {
         const rutinaAccordion = document.getElementById('rutinaAccordion');
   
-        data.dias.forEach((dia, index) => {
+        data.rutinas[idRutina].dias.forEach((dia, index) => {
           const card = document.createElement('div');
-          card.classList.add('card');
+          card.setAttribute('class', 'accordion-item row')
   
-          const cardHeader = document.createElement('div');
-          cardHeader.classList.add('card-header');
-  
-          const btn = document.createElement('button');
-          btn.classList.add('btn', 'btn-link');
-          btn.setAttribute('type', 'button');
-          btn.setAttribute('data-toggle', 'collapse');
-          btn.setAttribute('data-target', `#dia-${index}`);
+          const h1 = document.createElement('h1');
+          h1.setAttribute('class' ,'accordion-header dia');
+
+          btn = document.createElement('button');
+          btn.setAttribute('class' , 'accordion-button')
+          btn.setAttribute('type', 'button')
+          btn.setAttribute('data-bs-toggle', 'collapse');
+          btn.setAttribute('data-bs-target', `#dia-${index}`);
+          btn.setAttribute('aria-expanded', 'true');
+          btn.setAttribute('aria-controls', `#dia-${index}`);
           btn.textContent = dia.nombre;
-  
-          cardHeader.appendChild(btn);
-          card.appendChild(cardHeader);
-  
+          
+          h1.appendChild(btn);
+          card.appendChild(h1)
+
           const collapse = document.createElement('div');
-          collapse.classList.add('collapse');
+          if(index === 0){
+            collapse.setAttribute('class', 'accordion-collapse collapse show');
+
+          }else{
+            collapse.setAttribute('class', 'accordion-collapse collapse')
+          }
           collapse.setAttribute('id', `dia-${index}`);
+
+          const divEjerciciosAccordion = document.createElement('div');
+          divEjerciciosAccordion.setAttribute('class', 'accordion-body');
   
-          const cardBody = document.createElement('div');
-          cardBody.classList.add('card-body');
   
           dia.ejercicios.forEach(ejercicio => {
             const ejercicioCard = document.createElement('div');
+            ejercicioCard.setAttribute('class' ,'row justify-content-start col-md-6 mt-2 mb-2')
             ejercicioCard.classList.add('card');
   
             const ejercicioCardHeader = document.createElement('div');
@@ -56,27 +67,14 @@ function mostrarRutina() {
             ejercicioCard.appendChild(ejercicioCardHeader);
             ejercicioCard.appendChild(ejercicioCardBody);
   
-            cardBody.appendChild(ejercicioCard);
+            divEjerciciosAccordion.appendChild(ejercicioCard);
           });
   
-          collapse.appendChild(cardBody);
+          collapse.appendChild(divEjerciciosAccordion);
           card.appendChild(collapse);
   
           rutinaAccordion.appendChild(card);
         });
 
-        // Añadir evento click a los botones para que se expandan o contraigan las tarjetas
-        const buttons = document.querySelectorAll('.btn-link');
-        buttons.forEach((button) => {
-          button.addEventListener('click', () => {
-            const target = button.getAttribute('data-target');
-            const collapse = document.querySelector(target);
-            if (collapse.classList.contains('show')) {
-              collapse.classList.remove('show');
-            } else {
-              collapse.classList.add('show');
-            }
-          });
-        });
       });
 }
