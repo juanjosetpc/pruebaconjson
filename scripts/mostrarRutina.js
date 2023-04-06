@@ -1,7 +1,7 @@
 const idRutina = params.get('idRutina');
 
 function mostrarRutina() {
-  fetch('https://raw.githubusercontent.com/juanjosetpc/ProyectoInterfaces/gh-pages/ficheros%20json/rutinas.json')
+  fetch('https://raw.githubusercontent.com/juanjosetpc/pruebaconjson/main/ficheros%20json/rutinas.json')
   .then(response => response.json())
       .then(data => {
         const rutinaAccordion = document.getElementById('rutinaAccordion');
